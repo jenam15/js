@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercices DOM et JavaScript</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="main-title">🚀 Exercices JavaScript</h1>
+    </header>
+
+    <main>
+      <!-- Section 1 : Variables -->
+      <section class="grouped">
+        <h2>Variables</h2>
+        <div class="guided">
+          <h3>💡 Guidé</h3>
+          <div>
+            <input
+              type="text"
+              id="prenom-guided"
+              placeholder="Entrez votre prénom"
+            />
+            <input
+              type="number"
+              id="age-guided"
+              placeholder="Entrez votre âge"
+            />
+            <button id="afficher-guided">Afficher</button>
+          </div>
+          <p id="resultat-guided"></p>
+        </div>
+
+        <div class="exo">
+          <h3>🛠️ Autonome</h3>
+          <div>
+            <input
+              type="text"
+              id="prenom-exo"
+              placeholder="Entrez votre prénom"
+            />
+            <input type="number" id="age-exo" placeholder="Entrez votre âge" />
+            <button id="afficher-exo">Afficher</button>
+          </div>
+          <p id="resultat-exo"></p>
+        </div>
+      </section>
+
+      <!-- Section 2 : Modifier le texte -->
+      <section class="grouped">
+        <h2>Modifier le texte</h2>
+        <div class="guided">
+          <h3>💡 Guidé</h3>
+          <button id="change-text-guided">Changer le texte</button>
+          <p id="text-guided">Texte d'origine.</p>
+        </div>
+
+        <div class="exo">
+          <h3>🛠️ Autonome</h3>
+          <button id="change-text-exo">Changer le texte</button>
+          <p id="text-exo">Texte d'origine.</p>
+        </div>
+      </section>
+
+      <!-- Section 3 : Modifier les styles -->
+      <section class="grouped">
+        <h2>Modifier les styles</h2>
+        <div class="guided">
+          <h3>💡 Guidé</h3>
+          <button id="change-style-guided">Changer le style</button>
+          <p id="style-guided">Texte avec style.</p>
+        </div>
+
+        <div class="exo">
+          <h3>🛠️ Autonome</h3>
+          <button id="change-style-exo">Changer le style</button>
+          <p id="style-exo">Texte avec style.</p>
+        </div>
+      </section>
+
+      <!-- Section 4 : Liste dynamique -->
+      <section class="grouped">
+        <h2>Ajouter des éléments</h2>
+        <div class="guided">
+          <h3>💡 Guidé</h3>
+          <button id="add-item-guided">Ajouter un élément</button>
+          <ul id="list-guided">
+            <li>Élément 1</li>
+            <li>Élément 2</li>
+          </ul>
+        </div>
+
+        <div class="exo">
+          <h3>🛠️ Autonome</h3>
+          <button id="add-item-exo">Ajouter un élément</button>
+          <ul id="list-exo">
+            <li>Élément 1</li>
+            <li>Élément 2</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section 5 : Formulaire interactif -->
+      <section class="grouped">
+        <h2>Formulaire interactif</h2>
+        <div class="guided">
+          <h3>💡 Guidé</h3>
+          <input
+            type="text"
+            id="username-guided"
+            placeholder="Entrez votre nom"
+          />
+          <button id="greet-guided">Saluer</button>
+          <p id="greeting-guided"></p>
+        </div>
+
+        <div class="exo">
+          <h3>🛠️ Autonome</h3>
+          <input type="text" id="username-exo" placeholder="Entrez votre nom" />
+          <button id="greet-exo">Saluer</button>
+          <p id="greeting-exo"></p>
+        </div>
+      </section>
+
+      <!-- Section 6 : Boucles -->
+      <section class="grouped">
+        <h2>Boucles</h2>
+        <div class="guided">
+          <h3>💡 Guidé</h3>
+          <button id="loop-guided">Afficher les nombres</button>
+          <ul id="loop-list-guided"></ul>
+        </div>
+
+        <div class="exo">
+          <h3>🛠️ Autonome</h3>
+          <button id="loop-exo">Afficher les nombres</button>
+          <ul id="loop-list-exo"></ul>
+        </div>
+      </section>
+
+      <!-- Section BONUS  -->
+      <section class="grouped">
+        <h2>Bonus</h2>
+
+        <!-- Dark Mode -->
+        <div class="bonus">
+          <h3>🌙 Dark Mode</h3>
+          <button id="#">Activer le Dark Mode</button>
+        </div>
+
+        <!-- Générateur de couleurs aléatoires -->
+        <div class="bonus">
+          <h3>🎨 Couleur de fond aléatoire</h3>
+          <button id="#">Changer de couleur</button>
+          <p id="#">Couleur actuelle : #FFFFFF</p>
+        </div>
+
+        <!-- Bouton de réinitialisation -->
+        <div class="bonus">
+          <h3>🔄 Réinitialisation</h3>
+          <button id="#">Réinitialiser la page</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>🚀 Exos Javascript DTBM</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
